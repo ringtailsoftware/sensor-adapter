@@ -18,6 +18,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.customize ['modifyvm', :id, '--usb', 'on']
     v.customize ['usbfilter', 'add', '0', '--target', :id, '--name', 'featherm0', '--vendorid', '0x239a', '--productid', '0x8023']
     v.customize ['usbfilter', 'add', '0', '--target', :id, '--name', 'featherm0_flash', '--vendorid', '0x239a', '--productid', '0x001b']
+    v.customize ['usbfilter', 'add', '0', '--target', :id, '--name', 'featherm0', '--vendorid', '0x239a', '--productid', '0x800b']
   end
 
   # host
