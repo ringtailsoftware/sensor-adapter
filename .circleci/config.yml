@@ -4,7 +4,7 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run: docker build -t sensor-adapter .
+      - run: docker build -t xmaslights .
       - run: make
 
       - store_artifacts:
