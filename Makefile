@@ -1,6 +1,6 @@
 all:
 	docker build -t xmaslights .
-	docker run -it -v ${PWD}:/src xmaslights build.sh
+	docker run -it -v ${PWD}:/src xmaslights ./build.sh
 	mkdir -p artefacts
 	cp .pio/build/arduino/firmware.* artefacts
 
